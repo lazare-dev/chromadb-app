@@ -1,0 +1,26 @@
+version: '3'
+services:
+  chromadb:
+    build:
+      context: .
+      dockerfile: Dockerfile.chromadb
+    ports:
+      - "27017:27017"
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "3000:3000"
+    depends_on:
+      - chromadb
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend  # Specify the Dockerfile for the frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - api

@@ -1,0 +1,17 @@
+# Use an official Python image as the base image
+FROM python:3.8
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the Python API code into the container
+COPY api/ .
+
+# Install Flask and pymongo
+RUN pip install Flask pymongo
+
+# Expose the API port (adjust if needed)
+EXPOSE 3000
+
+# Start the Python API
+CMD ["python", "app.py"]
