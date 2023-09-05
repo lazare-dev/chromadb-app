@@ -1,6 +1,3 @@
-I apologize for the formatting issue. It seems that the code formatting has been misinterpreted. Here's the corrected Markdown content for your README:
-
-```markdown
 # ChromaDB App
 
 Welcome to the ChromaDB App repository! This application allows you to interact with ChromaDB, a powerful document database.
@@ -60,5 +57,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 - Thanks to the ChromaDB team for providing the database and support.
 ```
-
-You can copy and paste this corrected content into your README file in your repository.
