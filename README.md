@@ -56,4 +56,3 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgments
 
 - Thanks to the ChromaDB team for providing the database and support.
-```
